@@ -13,16 +13,15 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_marginBottom="20dp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/img_employee"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:loadimgae="@{employeeData.avatar}"
@@ -34,7 +33,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp"
             android:text="@{employeeData.firstName.concat(@string/space).concat(employeeData.lastname)}"
             app:layout_constraintStart_toEndOf="@+id/img_employee"
             app:layout_constraintTop_toTopOf="parent" />

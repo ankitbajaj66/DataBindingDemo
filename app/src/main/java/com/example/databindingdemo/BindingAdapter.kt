@@ -14,6 +14,5 @@ fun loadImage(imageView: ImageView, url: String) {
     Glide.with(imageView.context)
         .setDefaultRequestOptions(RequestOptions().circleCrop())
         .load(url)
-        .placeholder(R.drawable.ic_launcher_background)
         .into(imageView)
 }
